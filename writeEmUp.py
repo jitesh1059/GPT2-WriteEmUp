@@ -6,8 +6,6 @@ from pydrive.drive import GoogleDrive
 path = os.getcwd()
 
 def setting_up():
-    os.system("git clone https://github.com/jitesh1059/GPT2-WriteEmUp.git")
-    os.chdir(path)
     os.system("pip3 install -r requirements.txt")
     os.chdir(path + "/src")
     os.system("python3 download_model.py 124M")
