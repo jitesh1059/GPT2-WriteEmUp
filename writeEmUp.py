@@ -12,7 +12,7 @@ def setting_up():
 
 def auth_drive():
     gauth = GoogleAuth()
-    gauth.CommandLineAuth()
+    gauth.LocalWebserverAuth()
     drive = GoogleDrive(gauth)
     file_id = [
         "1w90gcY_DzPyGKHc3wX-vwejuNrnxGo0J",
